@@ -14,9 +14,10 @@ O script processar.py realiza três etapas principais:
 
 📂 Estrutura dos Arquivos
 📁 projeto/
-├── processar.py
-├── minha_imagem.txt
-└── README.md ← (este arquivo)
+ ├── processar.py
+ ├── minha_imagem.txt
+ └── README.md  ← (este arquivo)
+
 
 🧾 Formato do Arquivo de Imagem (minha_imagem.txt)
 
@@ -25,6 +26,7 @@ Cada pixel é representado por R,G,B, e cada linha representa uma linha da image
 255,0,0 0,255,0 0,0,255
 255,255,0 0,255,255 255,0,255
 255,255,255 128,128,128 0,0,0
+
 
 ✅ 3 linhas → altura
 ✅ 3 valores por linha → largura
@@ -36,10 +38,11 @@ Cada pixel é representado por R,G,B, e cada linha representa uma linha da image
 O Python abre o arquivo texto e converte cada valor para uma lista 3D:
 
 imagem_rgb = [
-[[255,0,0], [0,255,0], [0,0,255]],
-[[255,255,0], [0,255,255], [255,0,255]],
-[[255,255,255], [128,128,128], [0,0,0]]
+    [[255,0,0], [0,255,0], [0,0,255]],
+    [[255,255,0], [0,255,255], [255,0,255]],
+    [[255,255,255], [128,128,128], [0,0,0]]
 ]
+
 
 📌 Esse formato é equivalente a uma matriz de pixels em memória.
 
@@ -96,18 +99,6 @@ Tons de Cinza
 Limiarização
 
 Sem depender de bibliotecas como OpenCV ou PIL — ideal para aprendizado inicial.
-
-🚀 Melhorias Futuras
-
-Sugestões para evolução:
-
-Exportar os resultados para novos arquivos .txt
-
-Aplicar limiar automático (método de Otsu)
-
-Ampliar tamanho das imagens
-
-Visualização gráfica em ASCII
 
 👨‍💻 Autor
 
